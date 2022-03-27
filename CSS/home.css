@@ -14,7 +14,7 @@ i, a.nav-link {
 	color: #9B9F9F;
 }
 
-a.nav-link:hover {
+.card a, a.nav-link:hover {
 	color: #535556;
 }
 
@@ -41,6 +41,24 @@ a.location {
 	display:block;
 }
 
+.card {
+	margin:10px;
+}
+
+.card img:not(.location) {
+	width:  300px;
+    height: 300px;
+	object-fit: cover;
+}
+
+.locationCard {
+	width:40%;
+	object-fit: cover;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   [class*="carousel"] {
@@ -51,4 +69,9 @@ a.location {
   .carousel-control-prev-icon, .carousel-control-next-icon {
 	 display:none;
   }
+  
+  .locationCard {
+	width:100%;
+	margin: 0;
+}
 }
