@@ -41,10 +41,14 @@ a.location {
 	display:block;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   /* For mobile phones: */
   [class*="carousel"] {
     width: 100%;
 	margin: 0;
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+	 display:none;
   }
 }
