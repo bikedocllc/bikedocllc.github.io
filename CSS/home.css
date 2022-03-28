@@ -10,6 +10,10 @@ p, h2 {
 	margin-bottom:10px
 }
 
+#logo:hover {
+	cursor:pointer;
+}
+
 i, a.nav-link {
 	color: #9B9F9F;
 }
