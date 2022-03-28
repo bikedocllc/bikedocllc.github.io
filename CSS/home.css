@@ -58,6 +58,25 @@ a.location {
 	margin-right: auto;
 }
 
+.locationCard:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.locationCard a:hover {
+	text-decoration: none;
+}
+
+#divProducts .card:hover {
+	cursor:pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#mdlProduct img {
+	max-width:70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
