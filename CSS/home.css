@@ -129,9 +129,18 @@ a.location {
   }
   
   .carousel-control-prev-icon, .carousel-control-next-icon {
-	 display:none;
+	display:none;
   }
   
+ /*  #mdlProduct .carousel-control-prev-icon, #mdlProduct  .carousel-control-next-icon {
+	 display:block;
+  } */
+  
+  #divInfo {
+	max-height: 100%;
+	overflow-wrap: break-word;
+}
+
   .locationCard {
 	width:100%;
 	margin: 0;
