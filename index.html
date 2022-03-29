@@ -67,37 +67,62 @@
 						<div class="card" >
 							<img src="img/m_1.png" class="card-img-top" alt="airshot">
 							<div class="card-body d-flex flex-column">
-								<p class="card-text mb-4">Airshot</p>
+								<p class="title">Inflator for Co2</p>
+								<p class="price">$20.00</p>
+								<div class="info" hidden></div>
+								<p class="images" hidden>m_1.png</p>
 							</div>
 						</div>
 						<div class="card">
 							<img src="img/m_2.png" class="card-img-top" alt="multi-tool">
 							<div class="card-body d-flex flex-column">
-								<p class="card-text">Multi-tool</p>
+								<p class="title">Multi-tool</p>
+								<p class="price">$20.00</p>
+								<div class="info" hidden></div>
+								<p class="images" hidden>m_2.png|m_2(2).jpg</p>
 							</div>
 						</div>
 						<div class="card">
 							<img src="img/m_3.png" class="card-img-top" alt="patch kit">
 							<div class="card-body d-flex flex-column">
-								<p class="card-text">Patch Kit</p>
+								<p class="title">Park Tool Patch Kit</p>
+								<p class="price">$5.00</p>
+								<div class="info" hidden></div>
+								<p class="images" hidden>m_3.png</p>
 							</div>
 						</div>
 						<div class="card">
 							<img src="img/m_4.png" class="card-img-top" alt="tubes">
 							<div class="card-body d-flex flex-column">
-								<p class="card-text">Tubes</p>
+								<p class="title">Tubes</p>
+								<p class="price">$10.00</p>
+								<div class="info" hidden>
+									<p><strong>Sizes/Brands Available:</strong></p>
+									<p> 700cc x 20-25 (60mm presta valve)</p>
+									<p>Continental 700cc x 25-32 (60mm presta valve)</p>
+									<p>Sunlite 20” bmx (35mm shroder valve)</p>
+									<p>Continental 26” mountain bike</p>
+									<p>Continental 29” fat bike (42mm presta valve)</p>
+								</div>
+								<p class="images" hidden>m_4.png|m_8.png|m_5.png</p>
 							</div>
 						</div>
 						<div class="card">
 							<img src="img/m_6.png" class="card-img-top" alt="co2 refills">
 							<div class="card-body d-flex flex-column">
-								<p class="card-text">CO2 Refills</p>
+								<p class="title">Co2 Refills</p>
+								<p class="price">$5.00</p>
+								<div class="info" hidden></div>
+								<p class="images" hidden>m_6.png</p>
 							</div>
 						</div>
 						<div class="card">
 							<img src="img/m_7.png" class="card-img-top" alt="tire levers">
 							<div class="card-body d-flex flex-column">
-								<p class="card-text">Tire Levers</p>
+								<p class="title">Pedro’s Tire Levers  (set of 2)</p>
+								<p class="price">$10.00</p>
+								<div class="info" hidden></div>
+								<p class="images" hidden>m_7.png</p>
 							</div>
 						</div>
 					</div>
@@ -112,6 +137,7 @@
 				<div class="card-body">
 					<h4>St. Bernard's Pub</h4>
 					<p class="card-text mb-4">3907 Canal St. Houston, TX 77003</p>
+					<small style="color:red;font-style: italic;">*** This location only accepts cash ***</small>
 				</div>
 				</a>
 			</div>
@@ -137,9 +163,16 @@
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">
-					<img src="img/no_image.png" id="imgProduct">
+			<div class="modal-body">
+				<!-- <img src="img/no_image.png" id="imgProduct"> -->	
+				<div id="carouselProductImages" class="carousel slide" data-interval="false" data-ride="carousel">
+					<div class="carousel-inner">
+					</div>			
+					<br/>
+					<hr/>
 				</div>
+				<h5 id="txtPrice"></h5>
+				<div id="divInfo"></div>
 				<!-- <div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary">Save changes</button>
