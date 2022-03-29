@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	if (window.matchMedia("(max-width: 767px)").matches) 
+    {
+        $("#mdlProduct").find('.carousel').removeClass('slide');
+    }
 	$("#logo").click(function(){
 		$("#nav-home-tab").click();
 	});
