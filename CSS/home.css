@@ -2,6 +2,12 @@ p, h2 {
 	text-align:center;
 }
 
+#nav-locations h5 {
+	text-align:center;
+	font-style: italic;
+	color: #9B9F9F;
+}
+
 #logo {
 	display: block;
 	margin-left: auto;
@@ -86,11 +92,6 @@ a.location {
 	/* height: 500px; */
 }
 
-/* #mdlProduct img {
-	margin-left: auto;
-	margin-right: auto;
-} */
-
 #mdlProduct p {
 	text-align:left;
 }
@@ -103,7 +104,6 @@ a.location {
 #mdlProduct .carousel-item img {
   width:auto;
   min-height: auto;
-  /* height:300px; */
 }
 
 #mdlProduct .carousel-control-prev-icon {
@@ -131,10 +131,6 @@ a.location {
   .carousel-control-prev-icon, .carousel-control-next-icon {
 	display:none;
   }
-  
- /*  #mdlProduct .carousel-control-prev-icon, #mdlProduct  .carousel-control-next-icon {
-	 display:block;
-  } */
   
   #divInfo {
 	max-height: 100%;
