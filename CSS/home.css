@@ -1,27 +1,73 @@
+@font-face {
+	font-family: sequel;
+	src: url(../font_files/sequel_demo-webfont.woff);
+  }
+
+/* body {
+	background-color: #2DE589;
+  	background-image: linear-gradient(to bottom right, #48A263, #CBF886);
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}*/
+
+#header {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	background-image: linear-gradient(to bottom right, #48A263, #CBF886);
+}
+
+h2 {
+	font-family: sequel;
+}
+
 p, h2 {
 	text-align:center;
+}
+
+.tab {
+	margin: 20px;
+	position:initial;
+}
+.tab:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.tab.active {
+	font-weight: bold;
 }
 
 #nav-locations h5 {
 	text-align:center;
 	font-style: italic;
-	color: #9B9F9F;
 }
 
 #logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom:10px
+	margin-top: 0px;
+	margin-bottom:10px;
+	filter: invert(100%);
+	transition: all .2s ease-in-out;
 }
 
 #logo:hover {
 	cursor:pointer;
+	transform: scale(1.1);
 }
 
-i, a.nav-link, .card .price, #divInfo {
-	color: #9B9F9F;
+
+
+.nav-tabs {
+	margin: auto;
+  	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .carousel {
@@ -56,10 +102,6 @@ a.location {
 	font-style: italic;
 }
 
-.card a, a.nav-link:hover {
-	color: #535556;
-}
-
 .card img:not(.location) {
 	width:  300px;
     height: 300px;
@@ -74,24 +116,12 @@ a.location {
 	/*transition: box-shadow 1s ease-out 50ms;*/
 }
 
-/*.locationCard:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
-
 .locationCard a:hover {
 	text-decoration: none;
 }
 
 #divProducts .card:hover {
 	cursor:pointer;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-}
-#mdlProduct{
-	/* max-height: 90%; */
-	/* positon: fixed; */
-}
-#mdlProduct .modal-body {
-	/* height: 500px; */
 }
 
 #mdlProduct p {
@@ -101,7 +131,6 @@ a.location {
 #mdlProduct .carousel {
 	width: 100%;
 }
- 
  
 #mdlProduct .carousel-item img {
   width:auto;
@@ -116,7 +145,6 @@ a.location {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-
 #divInfo {
 	max-height: 200px;
 	overflow-y:scroll;
@@ -128,6 +156,14 @@ a.location {
 	transform: scale(1.1);
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: 2;
+ }
+
+ .white, .white a  {
+	color:white !important;
+ }
+
+ .dark, .dark a {
+	color:#353535 !important;
  }
 
 @media only screen and (max-width: 600px) {

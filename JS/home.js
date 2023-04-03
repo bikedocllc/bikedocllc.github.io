@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}else{
 			$("#carouselProductImages > div").empty();
 		}
-		
+	
 		
 		for(let i = imgList.length-1; i >= 0 ; i--){
 			var div = $('<div></div>');
