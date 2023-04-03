@@ -2,6 +2,7 @@ $(document).ready(function(){
 	if (window.matchMedia("(max-width: 767px)").matches) 
     {
         $("#mdlProduct").find('.carousel').removeClass('slide');
+		$("#logo").css({"width":"100px", "height":"100px"});
     }
 	$("#logo").click(function(){
 		$("#nav-home-tab").click();

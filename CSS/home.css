@@ -51,6 +51,8 @@ p, h2 {
 	margin-right: auto;
 	margin-top: 0px;
 	margin-bottom:10px;
+	width: 150px;
+	height: 150px;
 	filter: invert(100%);
 	transition: all .2s ease-in-out;
 }
