@@ -75,11 +75,11 @@ p, h2 {
 	
 }
 
-#logo, a {
+#logo, .tab {
 	transition: all .2s ease-in-out;
 }
 
-#logo:hover, a:hover {
+#logo:hover, .tab:hover {
 	transform: scale(1.1);
 }
 
