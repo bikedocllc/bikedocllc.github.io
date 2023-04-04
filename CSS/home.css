@@ -3,6 +3,10 @@
 	src: url(../font_files/sequel_demo-webfont.woff);
   }
 
+  @font-face {
+	font-family: garet;
+	src: url(../font_files/Garet-Book.ttf);
+  }
 /* body {
 	background-color: #2DE589;
   	background-image: linear-gradient(to bottom right, #48A263, #CBF886);
@@ -21,6 +25,15 @@
 
 h2 {
 	font-family: sequel;
+}
+
+p {
+	margin: 5px;
+}
+
+p, a {
+	font-family: garet;
+	font-size: 15px;
 }
 
 p, h2 {
@@ -54,15 +67,21 @@ p, h2 {
 	width: 150px;
 	height: 150px;
 	filter: invert(100%);
-	transition: all .2s ease-in-out;
+	
 }
 
 #logo:hover {
 	cursor:pointer;
-	transform: scale(1.1);
+	
 }
 
+#logo, a {
+	transition: all .2s ease-in-out;
+}
 
+#logo:hover, a:hover {
+	transform: scale(1.1);
+}
 
 .nav-tabs {
 	margin: auto;
@@ -151,6 +170,10 @@ a.location {
 	max-height: 200px;
 	overflow-y:scroll;
 	overflow-wrap: break-word;
+}
+
+.es-header-btn {
+	background-color: #48A263 !important;
 }
 
 .grow { transition: all .2s ease-in-out; }
